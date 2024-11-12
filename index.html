@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     .main-container{
+        width:32rem;
+        height: 100%;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 10px 7px 10px;
+        margin: 70px 280px;
+       
+     }
+
+     button{
+        border: 2px solid red;
+        background-color: white;
+        border-radius: 0;
+        padding: 5px;
+     }
+     a{
+        border: 2px solid red;
+        background-color: white;
+        border-radius: 0;
+        padding: 5px;
+     }
+
+     .first-box{
+        border: 2px solid red;
+        padding: 5px;
+        margin: 10px 0;
+     }
+     .second-box{
+        border: 2px solid red;
+        padding: 5px;
+        margin: 12px 0 8px 0;
+        font-weight: 500;
+     }
+     
+     .outer-box{
+        border: 2px solid red;
+        padding: 5px;
+        margin: 8px 0;
+     }
+     .inner-box{
+        border: 2px solid red;
+        padding: 5px;
+        font-weight: 500
+     }
+     .footer{
+        font-weight: 500;
+        margin-top: 10px;
+     }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="first-box">
+            <h1>I'm a box</h1>
+        </div>
+
+        <div class="second-box">
+            <p>I'm also a box with some text in it..Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod molestiae cumque dolores provident! Quo repellat odio rerum, ipsa maiores adipisci veritatis beata, non ipsam minus dignissioms amet cupiditate nescuiunt quas?   </p>
+        </div>
+        <div class="third-box">
+            <ul class="outer-box">
+                <li class="inner-box">this list is a box</li>
+                <li class="inner-box">and all the list items in it are boxes</li>
+            </ul>
+        </div>
+        <div class="footer">
+            even <button>buttons</button> and <a href="">links</a> are boxes.
+        </div>
+       
+    </div>
+</body>
+</html>
